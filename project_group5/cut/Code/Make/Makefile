@@ -9,7 +9,7 @@ C = gcc -c
 T = test
 
 test: $(OBJS) $(HEAD) -lpthread
-	$(G) $(T) $(OBJS)
+	$(G) $(T) $(OBJS) -lpthread
 menu.o: $(PM) $(HEAD)
 	$(C) $(PM)
 	
